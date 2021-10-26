@@ -51,7 +51,7 @@ function startStopTimer() {
     if(timerIsRunning === false) {
         timerIsRunning = true;
         timer = setInterval(runTimer, 10);
-        document.getElementById("btnStartStopp").innerHTML = "II";
+        document.getElementById("btnStartStopp").innerHTML = "||";
         document.getElementById("btnRound").hidden = false;
         document.getElementById("btnReset").hidden = false;
     }else{
