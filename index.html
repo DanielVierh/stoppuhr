@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoppuhr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Stoppuhr Ausgabe -->
+    <h1><span id="outHours">00</span>:<span id="outMinutes">00</span>:<span id="outSeconds">00</span>,<span id="outMilliseconds">00</span></h1>
+
+    <!-- Button Container -->
+    <div class="buttonBox">
+        <button onclick="resetTimer()" id="btnReset" hidden>Reset</button>
+        <button onclick="setRound()" id="btnRound" hidden>Runde</button>
+        <button onclick="startStopTimer()" id="btnStartStopp">Start</button>
+    </div>
+
+    <!-- Runde Container     -->
+    <h1>Runden:</h1>  
+    <div class="row scrollCont">                                                                                                                                 
+        <ul id="roundList"></ul>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
